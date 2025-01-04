@@ -182,7 +182,6 @@ Dynamic:
 
 
 
-
 #### Capture by Value
 
 
@@ -261,6 +260,35 @@ int main() {
 }
 ```
 
+
+### Search for all elements and print index
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main()
+{
+
+    std::vector<int> vec1 = {1, 2, 3, 1, 5, 1, 7, 8, 9};
+
+    int value = 1;
+    int index = 0;
+
+    std::for_each(vec1.begin(), vec1.end(), [value, &index](int element)
+                  {
+
+    if (element == value){
+
+        std::cout<< "ok :" << element << "index : " << index << std::endl;
+    }
+    index++;
+    
+     });
+}
+
+```
 
 ### Mutable Lambdas
 
