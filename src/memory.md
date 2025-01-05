@@ -9,7 +9,7 @@
     - [1.4. Pointers and Functions](#14-pointers-and-functions)
 2. [Dynamic Memory](#2-dynamic-memory)
     - [2.1. Using `new` and `delete`](#21-using-new-and-delete)
-    - [2.2. Dynamic Arrays](#22-dynamic-arrays)
+    - [2.2. Dynamic Containers](#22-dynamic-arrays)
     - [2.3. Dynamic Memory with Classes](#23-dynamic-memory-with-classes)
 3. [Memory Allocation](#3-memory-allocation)
     - [3.1. `malloc` and `free`](#31-malloc-and-free)
@@ -519,7 +519,7 @@ Name: Alice, Age: 21
 
 ---
 
-### 2.2. Dynamic Arrays
+### 2.2. Dynamic Containers
 
 #### Description
 
@@ -567,8 +567,86 @@ You entered: 10 20 30
 ```
 
 ---
+##### Example 2: Dynamic Containers
 
-##### Example 2: Dynamic Array of Objects
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <map>
+
+int main() {
+    // Dynamically allocate a std::vector
+    std::vector<int>* dynamicVector = new std::vector<int>();
+
+    // Populate the vector
+    dynamicVector->push_back(10);
+    dynamicVector->push_back(20);
+    dynamicVector->push_back(30);
+
+    std::cout << "Dynamic Vector Elements:" << std::endl;
+    for (const auto& elem : *dynamicVector) {
+        std::cout << elem << " ";
+    }
+    std::cout << std::endl;
+
+    // Dynamically allocate a std::vector<std::vector<int>>
+    std::vector<std::vector<int>>* dynamicMatrix = new std::vector<std::vector<int>>();
+
+    // Populate the vector of vectors
+    dynamicMatrix->push_back({1, 2, 3});
+    dynamicMatrix->push_back({4, 5, 6});
+    dynamicMatrix->push_back({7, 8, 9});
+
+    std::cout << "Dynamic Matrix Elements:" << std::endl;
+    for (const auto& row : *dynamicMatrix) {
+        for (const auto& elem : row) {
+            std::cout << elem << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    // Dynamically allocate a std::map
+    std::map<std::string, int>* dynamicMap = new std::map<std::string, int>();
+
+    // Populate the map
+    (*dynamicMap)["apple"] = 5;
+    (*dynamicMap)["banana"] = 3;
+    (*dynamicMap)["cherry"] = 8;
+
+    std::cout << "Dynamic Map Elements:" << std::endl;
+    for (const auto& pair : *dynamicMap) {
+        std::cout << pair.first << ": " << pair.second << std::endl;
+    }
+
+    // Free dynamically allocated memory
+    delete dynamicVector;
+    delete dynamicMatrix;
+    delete dynamicMap;
+
+    return 0;
+}
+```
+
+**Output:**
+
+```
+Dynamic Vector Elements:
+10 20 30 
+Dynamic Matrix Elements:
+1 2 3 
+4 5 6 
+7 8 9 
+Dynamic Map Elements:
+apple: 5
+banana: 3
+cherry: 8
+
+```
+
+
+---
+##### Example 3: Dynamic Array of Objects
 
 ```cpp
 #include <iostream>
@@ -627,7 +705,7 @@ Title: EffectiveC++, Price: $45.5
 
 ---
 
-##### Example 3: Resizing a Dynamic Array (Manual)
+##### Example 4: Resizing a Dynamic Array (Manual)
 
 ```cpp
 #include <iostream>
