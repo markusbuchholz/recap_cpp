@@ -1,11 +1,5 @@
-Certainly! Below is a comprehensive `README.md` formatted for GitHub, covering a wide range of **C++ Standard Library Algorithms**. Each algorithm is explained with three practical examples, including code snippets and their corresponding outputs. This guide will help you understand and apply these algorithms effectively in your C++ projects.
-
----
-
-```markdown
 # C++ Standard Library Algorithms Recap
 
-This repository provides an extensive recap of **C++ Standard Library Algorithms**, essential tools for efficient and effective programming. Each algorithm is detailed with explanations and multiple practical examples, complete with code snippets and their corresponding outputs, to aid your understanding and application in C++ projects.
 
 ## Table of Contents
 
@@ -42,7 +36,6 @@ This repository provides an extensive recap of **C++ Standard Library Algorithms
 31. [iter_swap](#31-iter_swap)
 32. [lexicographical_compare](#32-lexicographical_compare)
 33. [lower_bound](#33-lower_bound)
-
 35. [max_element](#35-max_element)
 36. [merge](#36-merge)
 37. [min](#37-min)
