@@ -1,41 +1,23 @@
 # C++ Standard Library Algorithms Recap
 
+---
 ## Quick Table
 
-| Number | Algorithm            |
-|--------|----------------------|
-| 2      | [all_of](#2-all_of)  |
-| 3      | [any_of](#3-any_of)  |
-| 4      | [binary_search](#4-binary_search) |
-| 9      | [count](#9-count)    |
-| 10     | [count_if](#10-count_if) |
-| 11     | [equal](#11-equal)  |
-| 13     | [fill](#13-fill)    |
-| 15     | [find](#15-find)    |
-| 16     | [find_end](#16-find_end) |
-| 20     | [for_each](#20-for_each) |
-| 21     | [generate](#21-generate) |
-| 29     | [is_sorted](#29-is_sorted) |
-| 35     | [max_element](#35-max_element) |
-| 36     | [merge](#36-merge)  |
-| 37     | [min](#37-min)      |
-| 38     | [min_element](#38-min_element) |
-| 39     | [minmax](#39-minmax) |
-| 40     | [minmax_element](#40-minmax_element) |
-| 41     | [mismatch](#41-mismatch) |
-| 42     | [move](#42-move)    |
-| 56     | [remove](#56-remove) |
-| 60     | [replace](#60-replace) |
-| 64     | [reverse](#64-reverse) |
-| 66     | [rotate](#66-rotate) |
-| 68     | [search](#68-search) |
-| 69     | [search_n](#69-search_n) |
-| 75     | [sort](#75-sort)    |
-| 79     | [swap](#79-swap)    |
-| 81     | [transform](#81-transform) |
 
+| **Algorithm**                 | **Algorithm**                   | **Algorithm**                        |
+|----------------------------------|-----------------------------------|----------------------------------------|
+| 2. [all_of](#2-all_of)           | 3. [any_of](#3-any_of)            | 4. [binary_search](#4-binary_search)   |
+| 9. [count](#9-count)             | 10. [count_if](#10-count_if)       | 11. [equal](#11-equal)                  |
+| 13. [fill](#13-fill)             | 15. [find](#15-find)               | 16. [find_end](#16-find_end)            |
+| 20. [for_each](#20-for_each)     | 21. [generate](#21-generate)       | 29. [is_sorted](#29-is_sorted)          |
+| 35. [max_element](#35-max_element)| 36. [merge](#36-merge)             | 37. [min](#37-min)                      |
+| 38. [min_element](#38-min_element)| 39. [minmax](#39-minmax)           | 40. [minmax_element](#40-minmax_element)|
+| 41. [mismatch](#41-mismatch)     | 42. [move](#42-move)               | 56. [remove](#56-remove)                |
+| 60. [replace](#60-replace)       | 64. [reverse](#64-reverse)         | 66. [rotate](#66-rotate)                |
+| 68. [search](#68-search)         | 69. [search_n](#69-search_n)       | 75. [sort](#75-sort)                     |
+| 79. [swap](#79-swap)             | 81. [transform](#81-transform)     |                                        |
 
-
+---
 
 ## Table of Contents
 
