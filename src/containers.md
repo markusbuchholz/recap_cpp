@@ -196,7 +196,8 @@ int main() {
 ```
 
 **Output:**
-``    Size before clear: 3
+```
+Size before clear: 3
 Size after clear: 0
 ```
 
@@ -343,7 +344,8 @@ int main() {
 ```
 
 **Output:**
-``    7 is a prime number.
+```
+    7 is a prime number.
 ```
 
 ---
@@ -488,7 +490,8 @@ int main() {
 ```
 
 **Output:**
-``    1 2 2 2 3 4 
+```
+1 2 2 2 3 4 
 ```
 
 ---
@@ -510,7 +513,8 @@ int main() {
 ```
 
 **Output:**
-``    cat appears 2 times.
+```
+cat appears 2 times.
 ```
 
 ---
@@ -534,7 +538,8 @@ int main() {
 ```
 
 **Output:**
-``    b c 
+```
+b c 
 ```
 
 ---
@@ -566,7 +571,8 @@ int main() {
 ```
 
 **Possible Output:**
-``    1 2 2 3 2 
+```
+1 2 2 3 2 
 ```
 *Note: The order may vary.*
 
@@ -615,7 +621,8 @@ int main() {
 ```
 
 **Possible Output:**
-``    y x z 
+```
+y x z 
 ```
 *Note: The order may vary.*
 
@@ -650,9 +657,10 @@ int main() {
 ```
 
 **Possible Output:**
-``    Alice has grade 85
-    Alice has grade 95
-    Bob has grade 90
+```
+Alice has grade 85
+Alice has grade 95
+Bob has grade 90
 ```
 *Note: The order may vary.*
 
@@ -679,9 +687,10 @@ int main() {
 ```
 
 **Possible Output:**
-``    Events with key 'A':
-    Apple
-    Avocado
+```
+Events with key 'A':
+Apple
+Avocado
 ```
 *Note: The order may vary.*
 
@@ -704,7 +713,8 @@ int main() {
 ```
 
 **Output:**
-``    Number of entries with key 1: 2
+```
+Number of entries with key 1: 2
 ```
 
 ---
@@ -739,7 +749,8 @@ int main() {
 ```
 
 **Output:**
-``    10 20 30 
+```
+10 20 30 
 ```
 
 ---
@@ -763,8 +774,9 @@ int main() {
 ```
 
 **Output:**
-``    Queue size: 2
-    Front element: first
+```
+Queue size: 2
+Front element: first
 ```
 
 ---
@@ -795,7 +807,8 @@ int main() {
 ```
 
 **Output:**
-``    (1, 2) (3, 4) 
+```
+(1, 2) (3, 4) 
 ```
 
 ---
@@ -830,7 +843,8 @@ int main() {
 ```
 
 **Output:**
-``    300 200 100 
+```
+300 200 100 
 ```
 
 ---
@@ -853,7 +867,8 @@ int main() {
 ```
 
 **Output:**
-``    Top element: banana
+```
+Top element: banana
 ```
 
 ---
@@ -885,8 +900,9 @@ int main() {
 ```
 
 **Output:**
-``    Employee: Bob, ID: 102
-    Employee: Alice, ID: 101
+```
+Employee: Bob, ID: 102
+Employee: Alice, ID: 101
 ```
 
 ---
@@ -920,7 +936,8 @@ int main() {
 ```
 
 **Output:**
-``    2 1 3 
+```
+2 1 3 
 ```
 
 ---
@@ -942,8 +959,9 @@ int main() {
 ```
 
 **Output:**
-``    First element: alpha
-    Third element: gamma
+```
+First element: alpha
+Third element: gamma
 ```
 
 ---
@@ -971,7 +989,8 @@ int main() {
 ```
 
 **Output:**
-``    20 40 60 80 
+```
+20 40 60 80 
 ```
 
 ---
@@ -999,24 +1018,3 @@ C++ offers a rich set of container classes in its Standard Template Library (STL
 - **Sequence Containers**:
   - `std::deque`: Double-ended queue, allows insertion/removal from both ends.
 
-Choosing the right container depends on the specific requirements of your application, such as the need for ordering, uniqueness, or the type of operations (insertion, deletion, access) you need to perform.
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-```
-
----
-
-### Additional Tips
-
-- **Syntax Highlighting**: The code blocks use triple backticks with `cpp` to enable C++ syntax highlighting on GitHub.
-- **Formatting**: Clear section headers and subheaders improve readability.
-- **Table of Contents**: Helps in navigating through the document, especially as it grows.
-- **Notes**: Indicated where the output order may vary due to the nature of unordered containers.
-- **License**: It's good practice to include a license in your repository.
-
-Feel free to customize this `README.md` further to suit your project's needs!
