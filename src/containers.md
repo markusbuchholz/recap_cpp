@@ -430,7 +430,8 @@ int main() {
 ```
 
 **Output:**
-``    Number of elements with key 'a': 2
+```
+Number of elements with key 'a': 2
 ```
 
 ---
@@ -456,9 +457,10 @@ int main() {
 ```
 
 **Output:**
-``    Events with key 1:
-    Start
-    Initialization
+```
+Events with key 1:
+Start
+Initialization
 ```
 
 ---
@@ -594,7 +596,8 @@ int main() {
 ```
 
 **Output:**
-``    "hello" appears 2 times.
+```
+"hello" appears 2 times.
 ```
 
 ---
