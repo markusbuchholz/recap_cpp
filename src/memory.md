@@ -9,7 +9,7 @@
     - [1.4. Pointers and Functions](#14-pointers-and-functions)
 2. [Dynamic Memory](#2-dynamic-memory)
     - [2.1. Using `new` and `delete`](#21-using-new-and-delete)
-    - [2.2. Dynamic Containers](#22-dynamic-arrays)
+    - [2.2. Dynamic Containers](#22-dynamic-containers)
     - [2.3. Dynamic Memory with Classes](#23-dynamic-memory-with-classes)
 3. [Memory Allocation](#3-memory-allocation)
     - [3.1. `malloc` and `free`](#31-malloc-and-free)
