@@ -79,15 +79,6 @@ std::for_each(std::execution::unseq, vec.begin(), vec.end(), [](int& x) { x *= 2
 
 ---
 
-
-
-
-
-
-
-
----
-
 ## Algorithms Demonstrated
 This repository includes examples of the following algorithms with parallel execution:
 1. [`std::for_each`](#stdfor_each)
