@@ -8,6 +8,16 @@ This repository demonstrates how to use parallel algorithms in C++ with the `std
 The main differences between the execution policies in C++ (`std::execution::seq`, `std::execution::par`, `std::execution::par_unseq`, and `std::execution::unseq`) lie in their behavior regarding parallelism, vectorization, and determinism. <br>
 These policies provide options for controlling how algorithms are executed to optimize performance.<br>
 
+---
+
+## Compilation
+
+```bash
+g++ -std=c++17 -pthread -ltbb program.cpp -o program
+```
+
+
+
 ### 1. **`std::execution::seq` (Sequential Execution)**
 
 - **Description**: Executes the algorithm sequentially, one element at a time, in the order they appear.
