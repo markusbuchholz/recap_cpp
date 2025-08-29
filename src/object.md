@@ -221,6 +221,44 @@ int main() {
 
 ---
 
+#### Example 2.1 
+
+```cpp
+#include <iostream>
+
+class Point {
+public:
+    int x, y;
+
+    // Parameterized constructor
+    Point(int a, int b) {
+        this->x = a;
+        this->y = b;
+    }
+
+    void display() const {
+        std::cout << "(" << x << ", " << y << ")\n";
+    }
+};
+
+int main() {
+    Point p1(50, 100);
+    Point p2(-32, 7);
+
+    p1.display();
+    p2.display();
+
+    return 0;
+}
+```
+**Output:**
+```
+(50, 100)
+(-32, 7)
+```
+
+---
+
 #### Example 3: Copy Constructor
 
 ```cpp
