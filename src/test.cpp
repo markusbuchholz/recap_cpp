@@ -34,5 +34,27 @@ int main() {
     
     std::cout << "Value of b via ptr_a: " << *ptr_a << std::endl;
 
+
+    int value_1 = 100;
+    int value_2 = 200;
+    std::unique_ptr<int> u_ptr;
+
+        // Assign a copy of value_1
+    u_ptr = std::make_unique<int>(value_1);
+    std::cout << "u_ptr points to: " << *u_ptr << std::endl;
+
+    // Reassign to a copy of value_2
+    u_ptr = std::make_unique<int>(value_2);
+    std::cout << "u_ptr now points to: " << *u_ptr << std::endl;
+
+    // ------------------------------------//
+    std::weak_ptr<int> w_prt;
+
+
+
+
+    
+
+    
     return 0;
 }
