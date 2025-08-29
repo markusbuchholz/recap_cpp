@@ -32,7 +32,10 @@ int main() {
     
     ptr_a = &b;
     
-    std::cout << "Value of b via ptr_a: " << *ptr_a << std::endl;
+    std::cout << "1. Value of b via ptr_a: " << *ptr_a << std::endl;
+    
+    b = 9999;
+    std::cout << "2. Value of b via ptr_a: " << *ptr_a << std::endl;
 
 
     int value_1 = 100;
@@ -45,7 +48,13 @@ int main() {
 
     // Reassign to a copy of value_2
     u_ptr = std::make_unique<int>(value_2);
-    std::cout << "u_ptr now points to: " << *u_ptr << std::endl;
+    std::cout << "1: u_ptr now points to : " << *u_ptr << std::endl;
+
+    value_2 = 500;
+    std::cout << "2: u_ptr now points to: " << *u_ptr << std::endl;
+
+
+    std::shared_ptr<int> s_ptr;
 
     // ------------------------------------//
     std::weak_ptr<int> w_prt;
