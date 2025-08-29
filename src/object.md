@@ -632,12 +632,45 @@ Barking...
 
 ### Description
 
-**Polymorphism** allows objects of different classes to be treated as objects of a common base class. It enables functions to process objects differently based on their actual derived types. C++ supports two types of polymorphism:
-
-- **Compile-Time Polymorphism (Static)**: Achieved through function overloading and templates.
-- **Run-Time Polymorphism (Dynamic)**: Achieved through virtual functions and inheritance.
+**Polymorphism** Base class (often abstract) that defines a common interface (pure virtual functions). Derived classes that override those functions with their own behavior.
+Base class pointer or reference to call the function, and the correct derived version runs at runtime.
 
 ### Examples
+
+#### Example 0: (abstract base + polymorphism) 
+
+```cpp
+#include <iostream>
+
+// Abstract class (cannot be instantiated)
+class Animal {
+public:
+    virtual void speak() = 0; // pure virtual function
+};
+
+class Dog : public Animal {
+public:
+    void speak() override { std::cout << "Dog barks\n"; }
+};
+
+class Cat : public Animal {
+public:
+    void speak() override { std::cout << "Cat meows\n"; }
+};
+
+int main() {
+    Animal* a1 = new Dog();  // base class pointer → Dog object
+    Animal* a2 = new Cat();  // base class pointer → Cat object
+
+    a1->speak(); // calls Dog::speak → "Dog barks"
+    a2->speak(); // calls Cat::speak → "Cat meows"
+
+    delete a1;
+    delete a2;
+}
+
+```
+---
 
 #### Example 1: Function Overloading (Compile-Time Polymorphism)
 
