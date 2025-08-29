@@ -51,11 +51,21 @@ C++ provides several smart pointers, each with distinct ownership semantics and 
 
 int main() {
     // Create a unique_ptr to an integer
+    //old
     std::unique_ptr<int> ptr(new int(42));
 
     std::cout << "Value: " << *ptr << "\n";
 
     // unique_ptr automatically deallocates memory when it goes out of scope
+
+    auto p = std::make_unique<int>(42);
+
+    std::unique_ptr<int> q;               // empty (nullptr), to be set later
+    q = std::make_unique<int>(7);         // assign later
+
+    int n = 20;
+    auto arr = std::make_unique<int[]>(n); // dynamic array
+    
     return 0;
 }
 ```
