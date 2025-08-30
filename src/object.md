@@ -632,8 +632,7 @@ Barking...
 
 ### Description
 
-**Polymorphism** Base class (often abstract) that defines a common interface (pure virtual functions). Derived classes that override those functions with their own behavior.
-Base class pointer or reference to call the function, and the correct derived version runs at runtime.
+**Polymorphism**  is a way to design software interfaces where a pointer or reference to an abstract base class can represent different derived class objects, and the actual behavior depends on which derived class is being used at runtime.
 
 ### Examples
 
