@@ -1920,6 +1920,34 @@ int main() {
 Names in uppercase: ALICE BOB CHARLIE 
 ```
 
+
+### Example 4: Call the function
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>  // for std::for_each
+
+// A normal function
+void printSquare(int n) {
+    std::cout << n * n << " ";
+}
+
+int main() {
+    std::vector<int> numbers = {1, 2, 3, 4, 5};
+
+    // Call the function on each element
+    std::for_each(numbers.begin(), numbers.end(), printSquare);
+
+    std::cout << "\n";
+    return 0;
+}
+
+```
+
+
+
+
 ---
 
 ## 21. generate
