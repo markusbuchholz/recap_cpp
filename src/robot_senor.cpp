@@ -2,6 +2,13 @@
 #include <memory>
 
 // Abstract base class (interface for all sensors)
+
+/*
+Sensor is an abstract class because it has a pure virtual function (= 0).
+It acts as an interface: it tells all derived classes “you must implement readData()”.
+You cannot do Sensor s; because abstract classes cannot be instantiated.
+But you can use a pointer or reference to Sensor (e.g., std::unique_ptr<Sensor>) to access derived objects.
+*/
 class Sensor {
 public:
     virtual void readData() = 0; // pure virtual → must be implemented
@@ -30,6 +37,7 @@ public:
 };
 
 // Derived class: Sonar sensor
+
 class Sonar : public Sensor {
 public:
     void readData() override {
