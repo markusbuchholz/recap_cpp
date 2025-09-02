@@ -142,6 +142,57 @@ int main() {
 }
 ```
 
+# 5. IK
+
+
+```cpp
+
+#include <iostream>
+#include <cmath>
+#include <Eigen/Dense>
+using namespace Eigen;
+
+int main() {
+    double L1 = 2.0, L2 = 1.0;  // link lengths
+    double x = 2.0, y = 1.0;    // target point
+
+    // Distance from origin to target
+    double r2 = x*x + y*y;
+
+    // Compute cos(theta2) using law of cosines
+    double cos_t2 = (r2 - L1*L1 - L2*L2) / (2*L1*L2);
+
+    if (cos_t2 < -1 || cos_t2 > 1) {
+        std::cout << "Target not reachable\n";
+        return 0;
+    }
+
+    double t2 = std::acos(cos_t2);
+
+    // Two possible solutions: elbow up/down
+    double t2_alt = -t2;
+
+    // Compute theta1 for each case
+    auto compute_theta1 = [&](double theta2) {
+        return std::atan2(y, x) - std::atan2(L2 * std::sin(theta2), L1 + L2 * std::cos(theta2));
+    };
+
+    double t1 = compute_theta1(t2);
+    double t1_alt = compute_theta1(t2_alt);
+
+    // Print solutions
+    std::cout << "Solution 1: theta1=" << t1 << " rad, theta2=" << t2 << " rad\n";
+    std::cout << "Solution 2: theta1=" << t1_alt << " rad, theta2=" << t2_alt << " rad\n";
+
+    // Verify with forward kinematics using Eigen
+    Vector2d p1(L1*std::cos(t1), L1*std::sin(t1));
+    Vector2d p2 = p1 + Vector2d(L2*std::cos(t1+t2), L2*std::sin(t1+t2));
+
+    std::cout << "FK check (sol1): " << p2.transpose() << " vs target (" << x << "," << y << ")\n";
+
+    return 0;
+}
+```
 ---
 
 
